@@ -1,8 +1,8 @@
 flag = True
 
-first = int(input())
-sec = int(input())
-com = input()
+first = int(input("введите первое число: "))
+sec = int(input("введите второе число: "))
+com = input("введите операцию для вашей пары числел: ")
 
 while flag:
 	if com == "*":
@@ -18,9 +18,9 @@ while flag:
 
 	print("-->> " , res)
 	first = res
-	sec = int(input())
+	sec = int(input("введите второе число: "))
 	
-	com = input()
+	com = input("введите операцию или stop если не хотите продолжать: ")
 	if com == "stop":
 		flag = False
 	
