@@ -19,3 +19,14 @@ for manID in df_man["ID"].tolist():
 df_man = pd.DataFrame(lst , columns = ["ID" , "NAME" , "QANTITY" , "SUM"])
 df_man = df_man.sort_values(by = ["SUM"])
 print(df_man)
+
+
+median_column = df_man["SUM"]
+type(median_column)
+median_column.plot(kind="barh")
+plt.show()
+
+column = df_man["QANTITY"]
+type(column)
+column.plot(kind="barh")
+plt.show()
