@@ -19,3 +19,4 @@ for manID in df_man["ID"].tolist():
 df_man = pd.DataFrame(lst , columns = ["ID" , "NAME" , "QANTITY" , "SUM"])
 df_man = df_man.sort_values(by = ["SUM"])
 print(df_man)
+
